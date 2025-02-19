@@ -1,0 +1,23 @@
+/* Estilos básicos */
+body {
+	font-family: Helvetica, sans-serif;
+	background-color: #d01f1f;
+	margin: 100;
+	padding: 100;
+}
+
+h1,h2 {font-size: 5em; 
+	font-family:Arial, Helvetica, sans-serif ;
+    text-align: center;
+    font-weight: bolder;
+}
+    
+
+h3 {
+	color: #ffffff;
+}
+
+section { color: rgb(221, 255, 0)}
+
+
+#contacto {text-align: center;}
