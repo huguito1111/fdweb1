@@ -1,23 +1,65 @@
 /* Estilos básicos */
 body {
-	font-family: Helvetica, sans-serif;
-	background-color: #d01f1f;
-	margin: 100;
-	padding: 100;
+    font-family: Helvetica, sans-serif;
+    background-color: #f1acd0;
+    margin: 100;
+    padding: 100;
 }
 
-h1,h2 {font-size: 5em; 
-	font-family:Arial, Helvetica, sans-serif ;
-    text-align: center;
-    font-weight: bolder;
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        color: #ffffff; 
+        transform: translateX(-800px); /* Empieza desde arriba */
+    }
+    to {
+        opacity: 1;
+        color: #ffffff;
+        transform: translateX(0); /* Termina en su posición original */
+    }
 }
-    
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        color: #ffffff; 
+        transform: translateX(-800px); /* Empieza desde la izquierda */
+    }
+    to {
+        opacity: 1;
+        color: #ffffff;
+        transform: translateX(0); /* Termina en su posición original */
+    }
+}
+
+h1 {
+    font-size: 5em;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-weight: 100;
+    padding: 3px;
+    margin: 3px;
+    transition: 1s ease-in-out;
+    color: #ffffff;
+    animation: fadeIn 2s ease-in-out; /* Aplica la animación fadeIn */
+}
+
+h2 {
+    font-size: 5em;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-weight: 100;
+    padding: 3px;
+    margin: 3px;
+    transition: 1s ease-out;
+    color: #ffffff;
+    animation: slideIn 4s ease-out; /* Aplica la animación slideIn */
+}
 
 h3 {
-	color: #ffffff;
+    color: #ff0000;
 }
 
-section { color: rgb(221, 255, 0)}
-
-
-#contacto {text-align: center;}
+section {
+    color: rgb(221, 255, 0);
+}
