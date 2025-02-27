@@ -1,65 +1,138 @@
 /* Estilos básicos */
 body {
-    font-family: Helvetica, sans-serif;
-    background-color: #f1acd0;
-    margin: 100;
-    padding: 100;
+  font-family: Helvetica, sans-serif;
+  background-color: #f1acd0;
+  margin: 100;
+  padding: 100;
 }
 
 @keyframes fadeIn {
-    from {
-        opacity: 0;
-        color: #ffffff; 
-        transform: translateX(-800px); /* Empieza desde arriba */
-    }
-    to {
-        opacity: 1;
-        color: #ffffff;
-        transform: translateX(0); /* Termina en su posición original */
-    }
+  from {
+    opacity: 0;
+    color: #ffffff;
+    transform: translateX(-800px); /* Empieza desde arriba */
+  }
+  to {
+    opacity: 1;
+    color: #ffffff;
+    transform: translateX(0); /* Termina en su posición original */
+  }
 }
 
 @keyframes slideIn {
-    from {
-        opacity: 0;
-        color: #ffffff; 
-        transform: translateX(-800px); /* Empieza desde la izquierda */
-    }
-    to {
-        opacity: 1;
-        color: #ffffff;
-        transform: translateX(0); /* Termina en su posición original */
-    }
+  from {
+    opacity: 0;
+    color: #ffffff;
+    transform: translateX(-800px); /* Empieza desde la izquierda */
+  }
+  to {
+    opacity: 1;
+    color: #ffffff;
+    transform: translateX(0); /* Termina en su posición original */
+  }
 }
 
 h1 {
-    font-size: 5em;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    font-weight: 100;
-    padding: 3px;
-    margin: 3px;
-    transition: 1s ease-in-out;
-    color: #ffffff;
-    animation: fadeIn 2s ease-in-out; /* Aplica la animación fadeIn */
+  font-size: 5em;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-weight: 100;
+  padding: 3px;
+  margin: 3px;
+  transition: 1s ease-in-out;
+  color: #ffffff;
+  animation: fadeIn 2s ease-in-out; /* Aplica la animación fadeIn */
 }
 
 h2 {
-    font-size: 5em;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    font-weight: 100;
-    padding: 3px;
-    margin: 3px;
-    transition: 1s ease-out;
-    color: #ffffff;
-    animation: slideIn 4s ease-out; /* Aplica la animación slideIn */
+  font-size: 5em;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-weight: 100;
+  padding: 3px;
+  margin: 3px;
+  transition: 1s ease-out;
+  color: #ffffff;
+  animation: slideIn 4s ease-out; /* Aplica la animación slideIn */
 }
 
 h3 {
-    color: #ff0000;
+  color: #ff0000;
 }
 
 section {
-    color: rgb(221, 255, 0);
+  color: rgb(221, 255, 0);
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+}
+
+.flex-items {
+  padding: 0 2em 0 0;
+  color: #ffffff;
+}
+
+.flex-items:nth-child(1) {
+  padding: 0 2em 0 0;
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+}
+
+.flex-items:nth-child(2) {
+  padding: 0 2em 0 0;
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+}
+
+.flex-items:nth-child(3) {
+  padding: 0 2em 0 0;
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+}
+
+.flex-items:nth-child(4) {
+  padding: 0 2em 0 0;
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+}
+
+.flex-items:nth-child(5) {
+  padding: 0 2em 0 0;
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+}
+
+.flex-items:nth-child(6) {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
 }
