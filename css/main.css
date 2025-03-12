@@ -1,21 +1,34 @@
 /* Estilos básicos */
 body {
-  font-family: Helvetica, sans-serif;
-  background-color: #f1acd0;
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  background-color: #0000;
   margin: 100;
   padding: 100;
 }
 
 @keyframes fadeIn {
   from {
-    opacity: 0;
-    color: #ffffff;
-    transform: translateX(-800px); /* Empieza desde arriba */
-  }
-  to {
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    font-size: 7em;
     opacity: 1;
     color: #ffffff;
-    transform: translateX(0); /* Termina en su posición original */
+    transform: translateY(-800); /* Empieza desde arriba */
+  }
+  to {
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    font-size: 7em;
+    opacity: 1;
+    color: #000000;
+    transform: translateY(0); /* Termina en su posición original */
   }
 }
 
@@ -23,37 +36,38 @@ body {
   from {
     opacity: 0;
     color: #ffffff;
-    transform: translateX(-800px); /* Empieza desde la izquierda */
+    transform: translateY(-400)); /* Empieza desde la izquierda */
   }
   to {
     opacity: 1;
-    color: #ffffff;
-    transform: translateX(0); /* Termina en su posición original */
+    color: #000000;
+    transform: translateY(0); /* Termina en su posición original */
   }
 }
 
 h1 {
-  font-size: 5em;
-  font-family: Arial, Helvetica, sans-serif;
+  font-size: 7em;
   text-align: center;
-  font-weight: 100;
-  padding: 3px;
-  margin: 3px;
+  font-weight: 10;
+  padding: 100px;
+  margin: 100px;
   transition: 1s ease-in-out;
-  color: #ffffff;
+  color: #000000;
   animation: fadeIn 2s ease-in-out; /* Aplica la animación fadeIn */
 }
 
 h2 {
-  font-size: 5em;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Work Sans", sans-serif;
+  font-size: 1.5em;
   text-align: center;
-  font-weight: 100;
-  padding: 3px;
-  margin: 3px;
-  transition: 1s ease-out;
-  color: #ffffff;
-  animation: slideIn 4s ease-out; /* Aplica la animación slideIn */
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  transition: 1s ease-in-out;
+  padding: 0px;
+  margin: 0px;
+  color: #000000;
+ 
 }
 
 h3 {
