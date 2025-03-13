@@ -1,12 +1,26 @@
 /* Estilos básicos */
+
 body {
   font-family: "Work Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: <weight>;
   font-style: normal;
-  background-color: #0000;
+  background-color: #ffff;
   margin: 100;
   padding: 100;
+  align-items: center;
+  justify-content: center;
+}
+
+body :hover {
+  text-shadow: 0 0 5px #ff53c0;
+  animation: slideIn 0.01s infinite ease-in-out;
+  align-items: center;
+  justify-content: center;
+}
+
+strong {
+  display: block;
 }
 
 @keyframes fadeIn {
@@ -34,44 +48,53 @@ body {
 
 @keyframes slideIn {
   from {
-    opacity: 0;
-    color: #ffffff;
-    transform: translateY(-400)); /* Empieza desde la izquierda */
+    opacity: 1;
+    color: #000000;
+    transform: translateY(0px); /* Empieza desde la izquierda */
   }
   to {
     opacity: 1;
-    color: #000000;
-    transform: translateY(0); /* Termina en su posición original */
+    color: #ff53c0;
+    transform: translateY(0px); /* Termina en su posición original */
   }
 }
 
 h1 {
-  font-size: 7em;
+  font-family: "Work Sans", sans-serif;
+  font-size: 3em;
   text-align: center;
-  font-weight: 10;
-  padding: 100px;
-  margin: 100px;
+  font-weight: bolder;
+  padding: 0px;
+  margin: 0px;
   transition: 1s ease-in-out;
   color: #000000;
-  animation: fadeIn 2s ease-in-out; /* Aplica la animación fadeIn */
+  animation: slideIn 2s ease-in-out;
+  /* Aplica la animación fadeIn */
+}
+h2,
+h3 {
+  font-family: "Work Sans", sans-serif;
+  font-size: 3em;
+  text-align: center;
+  font-weight: 5;
+  padding: 0px;
+  margin: 0px;
+  transition: 1s ease-in-out;
+  color: #000000;
+  animation: slideIn 2s ease-in-out; /* Aplica la animación fadeIn */
 }
 
-h2 {
+h4 {
   font-family: "Work Sans", sans-serif;
-  font-size: 1.5em;
+  font-size: 3em;
   text-align: center;
   font-optical-sizing: auto;
   font-weight: <weight>;
   font-style: normal;
   transition: 1s ease-in-out;
-  padding: 0px;
-  margin: 0px;
+  padding: 5px;
+  margin: 5px;
   color: #000000;
- 
-}
-
-h3 {
-  color: #ff0000;
 }
 
 section {
