@@ -12,9 +12,26 @@ body {
   justify-content: center;
 }
 
-body :hover {
+nav {
+  justify-content: center;
+  align-items: center;
+}
+
+link: {
+  font-family: "Work Sans", sans-serif;
+  font-size: 3em;
+  text-align: center;
+  font-weight: bolder;
+  padding: 0px;
+  margin: 0px;
+  transition: 1s ease-in-out;
+  color: #000000;
+  animation: slideIn 2s ease-in-out;
+}
+
+body:hover {
   text-shadow: 0 0 5px #ff53c0;
-  animation: slideIn 0.01s infinite ease-in-out;
+  animation: slideIn 0.01s infinite;
   align-items: center;
   justify-content: center;
 }
@@ -63,14 +80,13 @@ h1 {
   font-family: "Work Sans", sans-serif;
   font-size: 3em;
   text-align: center;
-  font-weight: bolder;
-  padding: 0px;
-  margin: 0px;
-  transition: 1s ease-in-out;
-  color: #000000;
-  animation: slideIn 2s ease-in-out;
-  /* Aplica la animación fadeIn */
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  padding: 5px;
+  margin: 5px;
 }
+
 h2,
 h3 {
   font-family: "Work Sans", sans-serif;
