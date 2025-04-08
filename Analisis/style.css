@@ -1,5 +1,9 @@
 /* Estilos base (Mobile First) */
-body {
+
+
+html{ scroll-behavior: smooth;}
+  
+  body {
   margin: 0;
   font-family: Helvetica, sans-serif;
   font-weight: 80;
@@ -16,8 +20,6 @@ h1 {
   font-weight: 5;
   text-align: center;
   font-size: 32.5vw;
-
-
 }
 
 h2 {
@@ -29,6 +31,7 @@ h2 {
  
 }
 
+¡
 footer {
   font-family: Helvetica, sans-serif;
   font-weight: 100;
@@ -38,13 +41,34 @@ footer {
   padding: 1rem;
 }
 nav {
-  border-bottom: 1px solid black;
+  border-bottom: 0px solid black;
   background-color: #ffffff;
   padding: 1rem;
   margin-bottom: 0.01rem;
+  position: fixed; /* Fija la barra en la parte superior */
+  top: 0; /* Establece la barra en la parte superior */
+  left: 0; /* Alinea la barra a la izquierda */
+  width: 100%; /* Asegura que ocupe todo el ancho de la página */
+  z-index: 1000; /* Se asegura de que esté encima de otros elementos */
+  padding: 18px;
+  box-shadow: 40px 0px 15px rgba(111, 114, 113, 0.728); 
+  width: 100vw;
+  text-decoration: none;
 }
+
+
 .title { border-top: 1px solid black;
-border-bottom: 1px solid black;}
+border-bottom: 1px solid black;
+font-weight: 100;
+
+} 
+
+.title:hover {
+  letter-spacing: 1px;
+  -webkit-text-stroke: #000000 13px;
+  transition: all 0.6s ease;
+}
+
 .contenedor-imagen {
   display: flex;
   justify-content: center;
@@ -62,24 +86,35 @@ border-bottom: 1px solid black;}
   flex: center;
 }
 
-.responsive-iframe {
-  width: 100vw;
-  height: 700px;
-  border-radius: 10px;
-  border: none;
-  margin: 15px;
+.mi-imagen:hover {
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+}
+
+
+.responsive-iframe:hover {
+  transform: scale(1.005);
+  transition: all 0.1s ease-in-out;
 }
 .nav-container {
   display: flex;
   justify-content: space-around;
   color: rgb(0, 0, 0);
   margin: 0px;
+  text-decoration: none
 }
 
 .nav-item {
   font-weight: 300;
   font-size: 0.9rem;
 }
+
+.nav-item:hover {
+  letter-spacing: 0px;
+  -webkit-text-stroke: #000000 25px;
+ 
+
+} 
 .contenedor {
   display: flex;
   flex-wrap: wrap;
@@ -102,10 +137,6 @@ border-bottom: 1px solid black;}
   flex: 1 1 100%;
   box-sizing: border-box;
   padding: 0.7rem;
-}
-
-.columna:nth-child(odd) {
-  background: #ffffff5b;
 }
 
 /* Tablet (min-width: 600px) — 2 columnas */
