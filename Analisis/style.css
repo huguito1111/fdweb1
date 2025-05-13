@@ -173,13 +173,7 @@ margin-right: 5vw;
 }
   
 .columna {
-  /*
-		Sintaxis: flex: [flex-grow] [flex-shrink] [flex-basis];
-		- flex-grow:    1 → permite que crezca para ocupar espacio disponible
-		- flex-shrink:  1 → permite que se reduzca si no cabe
-		- flex-basis: 100% → ancho base deseado para esta columna
-		En este caso: 1 columna por fila en móvil.
-	*/
+ 
   flex: 1 1 100%;
   box-sizing: border-box;
   padding: 0.7rem;
@@ -203,11 +197,6 @@ margin-top: 2vw;
      height: 100%;
     }
    
-
-  
-
-
-
 @media (min-width: 900px) {
   .columna {
     flex: 1 1 33.33%;
